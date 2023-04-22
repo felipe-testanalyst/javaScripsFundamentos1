@@ -22,3 +22,13 @@ function minimizaPalavra(palavra){
 
 const palavraMenor = minimizaPalavra(input);
 console.log(palavraMenor);
+
+//Conversao implicita
+const numero = 455;
+const numeroString = "455";
+console.log(numero == numeroString) //true pois "==" compara valores da variavel
+console.log(numero === numeroString) //false pois "===" compara valores e tipo da variavel
+console.log(numero + numeroString)
+ 
+//conversao explicita
+console.log(numero + Number(numeroString))
