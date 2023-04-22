@@ -1,0 +1,33 @@
+<meta charset="UFT-8">
+
+<script>
+
+function pulaLinha () {
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostraFrase(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var numeroPensado = Math.round(Math.random()*10);
+
+console.log(numeroPensado);
+
+var tentativas = 1;
+
+while(tentativas <=3){
+
+    var chute = parseInt(prompt("Adivinhe o numero que estou pensando."));
+
+    if(chute == numeroPensado){
+        mostraFrase("Parabens voce acertou");
+        break;
+    }else{
+        mostraFrase("Voce errou.");
+    }
+    tentativas++;
+}
+</script>

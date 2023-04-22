@@ -1,0 +1,37 @@
+<meta charset="UFT-8">
+
+<input id="chute">Adivinhe o numero</input>
+</br>
+<button>Chute</button>
+
+<script>
+
+function pulaLinha () {
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostraFrase(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+function chutar(){
+    for(tentativa = 0; tentativas < 3; tentativa++){
+        if(chute == numeroPensado){
+            mostraFrase("Parabens voce acertou");
+            break;
+    }   else{
+            mostraFrase("Voce errou.");
+        }
+    }
+}
+
+var numeroPensado = Math.round(Math.random()*10);
+var chute = document.getElementById('chute');
+var button = document.querySelector("button");
+
+
+console.log(numeroPensado);
+
+</script>
