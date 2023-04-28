@@ -1,15 +1,11 @@
 const livros = require("./lista-livros");
 const menorValor = require("./menor-valor");
+const switchItems = require("./switch");
 
 
 for (let atual = 0; atual < livros.length - 1; atual++){
     let menor = menorValor(livros, atual)
-
-    let livroAtual = livros[atual];
-    let livroMaisBarato = livros[menor];
-
-    livros[atual] = livroMaisBarato;
-    livros[menor] = livroAtual;
+    switchItems(livros, menor)
 }
 
 console.log(livros)
