@@ -21,7 +21,7 @@ const precosLivros = [
     },
     {
         titulo: "Python",
-        preco: 20,
+        preco: 25,
     },
 ]
 
